@@ -263,16 +263,16 @@ MSE = (1/n) * Σ(yᵢ - ŷᵢ)
 **Interpretasi Hasil berdasarkan problem statement**
 1. Masalah 1: Bagaimana cara memberikan rekomendasi buku yang relevan bagi pengguna berdasarkan preferensi mereka, mengingat banyaknya pilihan buku yang tersedia di platform? <br>
 Solusi:
-Collaborative Filtering dengan pendekatan K-Nearest Neighbors (KNN) mampu mempelajari pola rating antar pengguna dan menyarankan buku yang disukai oleh pengguna lain yang memiliki preferensi serupa. <br>
+Menggunakan Collaborative Filtering berbasis algoritma K-Nearest Neighbors (KNN) untuk menganalisis pola rating pengguna. Sistem ini merekomendasikan buku yang disukai oleh pengguna lain yang memiliki preferensi serupa, meskipun pengguna belum pernah membaca atau memberi rating pada buku-buku tersebut. <br>
 Dampak:
-Dengan MAE sebesar 0.8171, sistem mampu memberikan rekomendasi yang cukup akurat dan relevan, membantu pengguna menemukan buku favorit secara efisien. <br>
+Dengan nilai Mean Absolute Error (MAE) sebesar 0.8171, sistem menunjukkan performa prediksi yang cukup baik. Ini membantu pengguna menemukan buku yang sesuai dengan minat mereka secara efisien, mengurangi waktu pencarian, serta meningkatkan kepuasan dan keterlibatan pengguna terhadap platform. <br>
 
-2. Masalah 2: Bagaimana cara mengatasi masalah "Information Overload" pada pengguna yang kesulitan memilih buku dengan banyaknya pilihan yang ada? <br>
+3. Masalah 2: Bagaimana cara mengatasi masalah "Information Overload" pada pengguna yang kesulitan memilih buku dengan banyaknya pilihan yang ada? <br>
 Solusi : 
-Model menyaring dan merekomendasikan Top-N buku dengan prediksi rating tertinggi berdasarkan preferensi pengguna yang mirip. <br>
-Dampak : Pemilihan Random Forest sebagai model terbaik mendukung pencapaian target bisnis untuk meningkatkan akurasi prediksi, meminimalisir kerugian akibat prediksi yang tidak tepat.
+ Sistem merekomendasikan Top-N buku dengan prediksi rating tertinggi, berdasarkan preferensi pengguna lain yang memiliki kemiripan selera menggunakan pendekatan collaborative filtering (K-Nearest Neighbors). <br>
+Dampak : Pendekatan ini membantu menyederhanakan proses pemilihan buku, meningkatkan kepuasan pengguna, dan mendukung tujuan bisnis dalam menyediakan rekomendasi yang lebih relevan serta mengurangi kemungkinan rekomendasi yang tidak sesuai.
 
-3. Masalah 3:  Bagaimana sistem dapat mengidentifikasi buku yang serupa berdasarkan konten atau preferensi pengguna lain yang memiliki pola rating yang mirip? <br>
+4. Masalah 3:  Bagaimana sistem dapat mengidentifikasi buku yang serupa berdasarkan konten atau preferensi pengguna lain yang memiliki pola rating yang mirip? <br>
 Solusi:
    * Content-Based Filtering: Menggunakan TF-IDF dari judul + penulis untuk mengukur kesamaan antar buku.
    * Collaborative Filtering: Mengandalkan pola rating pengguna lain yang mirip. <br> <br>
