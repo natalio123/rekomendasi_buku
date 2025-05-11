@@ -251,11 +251,11 @@ Dua pendekatan algoritmik yang digunakan untuk menyelesaikan masalah rekomendasi
        * Butuh interaksi pengguna yang cukup banyak agar akurat.
 
 ## 📌 Evaluation
-**Metrik evaluasi yang digunakan yaitu MSE** <br>
-Mean Absolute Error (MSE) <br>
+**Metrik evaluasi yang digunakan yaitu MAE** <br>
+Mean Absolute Error (MAE) <br>
 MAE mengukur rata-rata selisih absolut antara nilai rating yang diprediksi dan nilai aktual yang diberikan oleh pengguna. Semakin kecil nilai MAE, maka semakin akurat model dalam merepresentasikan preferensi pengguna. <br>
 Rumus: <br>
-MSE = (1/n) * Σ(yᵢ - ŷᵢ)
+MAE = (1/n) * Σ|yᵢ - ŷᵢ|
 
 **Hasil Evaluasi Model**
 ``` Mean Absolute Error (MAE): 0.8171```
